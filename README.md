@@ -22,4 +22,4 @@ First (EDF) e per Rate Monotonic (RM). Nello specifico, deve essere modificato i
 
 [1] L. Leuter, *Software Engineering for Embedded Systems Relazione di Progetto*, 2021/2022.
 
-[2] L. Macchiarini, ≪Design and development of a software component for the analysis of preemptive timed models,≫ Tesi di Laurea Triennale in Ingegneria Informatica, Universit`a degli Studi di Firenze, 2018/2019.
+[2] L. Macchiarini, *≪Design and development of a software component for the analysis of preemptive timed models≫* Tesi di Laurea Triennale in Ingegneria Informatica, Universit`a degli Studi di Firenze, 2018/2019.
