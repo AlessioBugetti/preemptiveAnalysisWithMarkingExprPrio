@@ -2,9 +2,8 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.oris-tool</groupId>
-  <artifactId>preemptiveAnalysis</artifactId>
+  <artifactId>markingptpn</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <name>PreemptiveAnalysis Project</name>
 
   <properties>
     <maven.compiler.release>11</maven.compiler.release>
@@ -46,12 +45,6 @@
       <version>${junit.jupiter.version}</version>
       <scope>test</scope>
     </dependency>
-    <!-- <dependency> needed for Eclipse < 4.8 
-      <groupId>org.junit.platform</groupId>
-      <artifactId>junit-platform-launcher</artifactId>
-      <version>${junit.platform.version}</version>
-      <scope>test</scope>
-    </dependency> -->
     <dependency>
         <groupId>com.google.guava</groupId>
         <artifactId>guava</artifactId>
