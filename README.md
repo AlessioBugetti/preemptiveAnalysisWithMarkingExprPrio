@@ -1,7 +1,7 @@
 <p align="center">
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://i.ibb.co/BqYkwTs/Logo-universita-firenze.png">
-  <img alt="Shows an illustrated sun in light color mode and a moon with stars in dark color mode." src="https://i.ibb.co/3FNRHSD/Logo-universita-firenze.png" width="300">
+  <img alt="UniFi Logo" src="https://i.ibb.co/3FNRHSD/Logo-universita-firenze.png" width="300">
 </picture>
 </p>
 
