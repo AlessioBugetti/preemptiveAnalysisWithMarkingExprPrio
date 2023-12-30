@@ -5,18 +5,17 @@
 </picture>
 </p>
 
-# Estensione della libreria Sirio
+# Extension of the Sirio Library
 
-L’obbiettivo di questo progetto è quello di realizzare un'estensione della libreria [SIRIO](https://github.com/oris-tool/sirio) che
-consenta di rappresentare preemptive Time Petri Net (pTPN) con le priorità che sono espressioni di una marcatura e che permetta di modellare uno schema per lo scheduling Earliest Deadline First (EDF) e per Rate Monotonic (RM). Nello specifico, deve essere modificato il metamodello dei task per permettere di essere composti da uno o più chunk computazionali e inoltre deve essere fornita un'implementazione del Priority Ceiling Emulation Protocol (PCEP) come politica di gestione delle risorse in mutua esclusione.
+The goal of this project is to create an extension of the [SIRIO](https://github.com/oris-tool/sirio) library that allows preemptive Time Petri Nets (pTPN) to be represented with priorities that are expressions of a marking and that allows modeling of a schema for Earliest Deadline First (EDF) scheduling and Rate Monotonic (RM). Specifically, the task metamodel must be modified to allow it to be composed of one or more computational chunks, and an implementation of the Priority Ceiling Emulation Protocol (PCEP) must be provided as a mutual exclusion resource management policy.
 
-È stata estesa la libreria prodotta da [1] che è basata sul lavoro di [2].
+The library produced by [1], which is based on the work of [2], has been extended.
 
-## Autore
+## Author
 
 * Alessio Bugetti, <a href="mailto:alessio.bugetti@edu.unifi.it">alessio.bugetti@edu.unifi.it</a>
 
-## Riferimenti
+## References
 
 [1] L. Leuter, *Software Engineering for Embedded Systems Relazione di Progetto*, 2021/2022.
 
