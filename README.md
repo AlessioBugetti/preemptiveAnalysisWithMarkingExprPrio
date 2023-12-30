@@ -7,7 +7,7 @@
 
 # Extension of the Sirio Library
 
-The goal of this project is to create an extension of the [SIRIO](https://github.com/oris-tool/sirio) library that allows preemptive Time Petri Nets (pTPN) to be represented with priorities that are expressions of a marking and that allows modeling of a schema for Earliest Deadline First (EDF) scheduling and Rate Monotonic (RM). Specifically, the task metamodel must be modified to allow it to be composed of one or more computational chunks, and an implementation of the Priority Ceiling Emulation Protocol (PCEP) must be provided as a mutual exclusion resource management policy.
+The goal of this project is to create an extension of the [SIRIO](https://github.com/oris-tool/sirio) library that allows preemptive Time Petri Nets (pTPN) to be represented with priorities that are expressions of a marking and that allows modeling of a schema for Earliest Deadline First (EDF) scheduling and Rate Monotonic (RM). Specifically, the task metamodel must be modified to allow it to be composed of one or more computational chunks, and an implementation of the Priority Ceiling Emulation Protocol (PCEP) should be provided as a policy for resource management, ensuring mutual exclusion.
 
 The library produced by [1], which is based on the work of [2], has been extended.
 
