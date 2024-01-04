@@ -1,4 +1,4 @@
-package org.oristool.models.markingptpn;
+package org.oristool.models.markingptpnpcep;
 
 import static org.junit.jupiter.api.Assertions.*;
 import java.util.ArrayList;
@@ -9,12 +9,11 @@ import org.junit.jupiter.api.Test;
 //Test con 3 Task con deadline minore su task con periodo maggiore
 class TestScheduling4 {
 	TaskSet taskSet;
-	ArrayList<Task> tasks1;
 	
 	@BeforeEach
 	void setUp() {
 		taskSet = new TaskSet();
-		tasks1 = new ArrayList<>();
+
 		Task task1 =  new Task(4, 8);
 		Task task2 = new Task(5, 6);
 		Task task3 = new Task(8, 12);
@@ -25,11 +24,6 @@ class TestScheduling4 {
 		taskSet.addTask(task1);
 		taskSet.addTask(task2);
 		taskSet.addTask(task3);
-		
-		//Copia del taskSet
-		for (Task t : taskSet.getTasks()) {
-			tasks1.add(t);
-		}
 	}
 	
 	@Test
@@ -53,8 +47,6 @@ class TestScheduling4 {
 			assertTrue(bounds.get(c)[1] <= t.getDeadline());
 			c++;
 		}
-		
-		
 	}
 
 }

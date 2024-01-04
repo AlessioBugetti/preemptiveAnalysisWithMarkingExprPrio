@@ -6,22 +6,28 @@ import java.util.ArrayList;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
-class TestScheduling7 {
+class TestScheduling11 {
 	TaskSet taskSet;
-	Semaphore semaphore;
+	Semaphore semaphoreA;
+	Semaphore semaphoreB;
 	
 	@BeforeEach
 	void setUp() {
 		taskSet = new TaskSet();
-		semaphore = new Semaphore();
+		semaphoreA = new Semaphore();
+		semaphoreB = new Semaphore();
 		
-		Task task1 = new Task(10, 10);
-		Task task2 =  new Task(8, 15);
-		task1.addChunk(new Chunk(1, 2, semaphore));
-        task2.addChunk(new Chunk(1, 2, semaphore));
+		Task task1 = new Task(20, 20);
+		Task task2 =  new Task(22, 25);
+		Task task3 =  new Task(20, 22);
+		task1.addChunk(new Chunk(1, 2, semaphoreA));
+        task2.addChunk(new Chunk(2, 4, semaphoreB));
+        task3.addChunk(new Chunk(3, 4, semaphoreA));
+		task3.addChunk(new Chunk(3, 5, semaphoreB));
 		
 		taskSet.addTask(task1);
 		taskSet.addTask(task2);
+		taskSet.addTask(task3);
 	}
 	
 	@Test

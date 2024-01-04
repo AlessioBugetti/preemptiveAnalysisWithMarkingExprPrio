@@ -1,4 +1,4 @@
-package org.oristool.models.markingptpn;
+package org.oristool.models.markingptpnpcep;
 
 import static org.junit.jupiter.api.Assertions.*;
 import java.util.ArrayList;
@@ -9,12 +9,11 @@ import org.junit.jupiter.api.Test;
 // Test con 5 Task
 class TestScheduling3 {
 	TaskSet taskSet;
-	ArrayList<Task> tasks1;
 	
 	@BeforeEach
 	void setUp() {
 		taskSet = new TaskSet();
-		tasks1 = new ArrayList<>();
+		
 		Task task1 = new Task(8, 10);
 		Task task2 =  new Task(14, 15);
 		Task task3 = new Task(20, 20);
@@ -31,12 +30,6 @@ class TestScheduling3 {
 		taskSet.addTask(task3);
 		taskSet.addTask(task4);
 		taskSet.addTask(task5);
-
-		
-		//Copia del taskSet
-		for (Task t : taskSet.getTasks()) {
-			tasks1.add(t);
-		}
 	}
 	
 	@Test
@@ -63,7 +56,4 @@ class TestScheduling3 {
 		
 		
 	}
-	
-	
-
 }
